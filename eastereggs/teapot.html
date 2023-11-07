@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teapot</title>
+    <style>
+        #teapot {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background: url('https://path-to-your-teapot-image.com/teapot.png') no-repeat;
+            background-size: contain;
+            cursor: pointer;
+            animation: swing 1s infinite alternate;
+            transform-origin: 50% 0;
+        }
+        @keyframes swing {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(20deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="teapot"></div>
+    <script>
+        document.getElementById('teapot').addEventListener('click', function() {
+            this.style.animation = 'none';
+        });
+    </script>
+</body>
+</html>
