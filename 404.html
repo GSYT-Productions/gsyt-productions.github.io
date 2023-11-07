@@ -2,6 +2,33 @@
 <html>
 <head>
     <title>404 Not Found</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 150px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        body {
+            font: 20px Helvetica, sans-serif;
+            color: #333;
+        }
+        article {
+            display: block;
+            text-align: left;
+            width: 650px;
+            margin: 0 auto;
+        }
+        a {
+            color: #dc8100;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var path = window.location.pathname;
@@ -9,7 +36,6 @@
 
             // Check if the referrer is the 404 page
             if (referrer.endsWith('/404.html')) {
-                document.body.innerHTML = '<h1>404 Not Found</h1><p>The page you were looking for could not be found.</p>';
                 return;
             }
 
@@ -21,14 +47,20 @@
                     window.location.href = 'https://gsyt-productions.github.io/BunnyPadInfo.html';
                     break;
                 case '/teapot':
-                    window.location.href = 'https://github.com/GSYT-Productions/gsyt-productions.github.io/blob/86ad5e90d84737facca958610e8e539b87826e76/eastereggs/teapot.html';
+                    window.location.href = 'https://gsyt-productions.github.io/eastereggs/teapot.html';
                     break;
                 default:
-                    document.body.innerHTML = '<h1>404 Not Found</h1><p>The page you were looking for could not be found.</p>';
+                    return;
             }
         });
     </script>
 </head>
 <body>
+    <article>
+        <h1>We couldn't find what you were looking for.</h1>
+        <p>Unfortunately the page you were looking for could not be found. It may be temporarily unavailable, moved or no longer exist.</p>
+        <p>Check the URL you entered for any mistakes and try again. Alternatively, you can go back to our main site.</p>
+        <p><a href="https://gsyt-productions.github.io/">Go to the main site</a></p>
+    </article>
 </body>
 </html>
