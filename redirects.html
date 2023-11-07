@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirect</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var path = window.location.pathname;
+            switch(path) {
+                case '/home':
+                    window.location.href = 'https://gsyt-productions.github.io/';
+                    break;
+                case '/bunnypad':
+                    window.location.href = 'https://gsyt-productions.github.io/BunnyPadInfo.html';
+                    break;
+                case '/teapot':
+                    window.location.href = 'https://github.com/GSYT-Productions/gsyt-productions.github.io/blob/86ad5e90d84737facca958610e8e539b87826e76/eastereggs/teapot.html';
+                    break;
+                default:
+                    window.location.href = '/404.html';
+            }
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
