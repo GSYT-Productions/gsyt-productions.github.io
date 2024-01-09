@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .card {
+    width: 200px;
+    height: 200px;
+    background-color: #f8f9fa;
+    border: 1px solid #6c757d;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.card:hover .answer {
+    opacity: 1;
+}
+
+.card:hover .question {
+    opacity: 0;
+}
+
+.question {
+    position: absolute;
+    z-index: 1;
+}
+
+.answer {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; animation: fadeIn 2s;">Flashcards</h1>
+
+    <div class="grid">
+        <div class="card">
+            <div class="question">Row 1</div>
+			<div class="answer">Row 1</div>
+        </div>
+        <div class="card">
+            <div class="question">What is BunnyPad?</div>
+            <div class="answer">BunnyPad is a note-taking app developed by GSYT Productions.</div>
+        </div>
+         <div class="card">
+            <div class="question">How many downloads does BunnyPad have?</div>
+            <div class="answer">As of the last checking, BunnyPad has a total of 186 downloads.</div>
+        </div> 
+		<div class="card">
+            <div class="question">Who contributed to the development of BunnyPad?</div>
+            <div class="answer">According to itch.io, BunnyPad has been contributed to by jpbandroid, ZeRoTeCh00, PBbunnypower, GarryStraitYT, Ducky, Come On Linux, BunnyFndr, and Bluejay.</div>
+        </div> 
+		<div class="card">
+            <div class="question">Who is BunnyPad dedicated to?</div>
+            <div class="answer">BunnyPad is dedicated to PBbunnypower, the same person who created the icon.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">Row 2</div>
+			<div class="answer">Row 2</div>
+        </div>
+        <div class="card">
+            <div class="question">Who created BunnyPad?</div>
+            <div class="answer">BunnyPad was created by Garry Strait, the founder of GSYT Productions.</div>
+        </div>
+         <div class="card">
+            <div class="question">What is BunnyPad made in?</div>
+            <div class="answer">BunnyPad is made in Python, using the PyQt5 library as the GUI.</div>
+        </div>
+		 <div class="card">
+            <div class="question">What is some lore behind the BunnyPad icon?</div>
+            <div class="answer">BunnyPad's icon does have lore, but not even GarryStraitYT (Garry Strait) knows what's cannon or lore involving the icon, as it was PBbunnypower who created the icon.</div>
+        </div>
+		 <div class="card">
+            <div class="question">What is PrettyFonts?</div>
+            <div class="answer">PrettyFonts is the proprietary engine behind BunnyPad. PrettyFonts is designed to fit fluently against Windows 11, and works beautifully when paired against Rectify11.</div>
+</body>
+</html>
