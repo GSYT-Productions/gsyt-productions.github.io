@@ -30,50 +30,45 @@
         }
     </style>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var path = window.location.pathname;
-            var referrer = document.referrer;
-
             // Check if the referrer is the 404 page
-            if (referrer.endsWith('/404.html')) {
+            if (document && document.referrer && document.referrer.endsWith && document.referrer.endsWith('/404.html')) {
                 return;
             }
 
-            switch(path) {
+            switch(location.pathname) {
                 case '/home':
-                    window.location.href = 'https://gsyt-productions.github.io/';
+                    location.href = 'https://gsyt-productions.github.io/';
                     break;
                 case '/bunnypad':
-                    window.location.href = 'https://gsyt-productions.github.io/subpages/BunnyPadInfo.html';
+                    location.href = 'https://gsyt-productions.github.io/subpages/BunnyPadInfo.html';
                     break;
                 case '/flashcards':
-                    window.location.href = 'https://gsyt-productions.github.io/extras/Flashcards.html';
+                    location.href = 'https://gsyt-productions.github.io/extras/Flashcards.html';
                     break;
                 case '/msc':
-                    window.location.href = 'https://gsyt-productions.github.io/extras/mockscorecard/index.html';
+                    location.href = 'https://gsyt-productions.github.io/extras/mockscorecard/index.html';
                     break;
                 case '/team':
-                    window.location.href = 'https://gsyt-productions.github.io/extras/team.html';
+                    location.href = 'https://gsyt-productions.github.io/extras/team.html';
                     break;
                 case '/unity':
-                    window.location.href = 'https://gsyt-productions.github.io/subpages/unity.html';
+                    location.href = 'https://gsyt-productions.github.io/subpages/unity.html';
                     break;
                 case '/socials':
-                    window.location.href = 'https://gsyt-productions.github.io/subpages/socials.html';
+                    location.href = 'https://gsyt-productions.github.io/subpages/socials.html';
                     break;
                 case '/resources':
-                    window.location.href = 'https://gsyt-productions.github.io/subpages/resources.html';
+                    location.href = 'https://gsyt-productions.github.io/subpages/resources.html';
                     break;
                 case '/retropc':
-                    window.location.href = 'https://gsyt-productions.github.io/subpages/retropc.html';
+                    location.href = 'https://gsyt-productions.github.io/subpages/retropc.html';
                     break;
                 case '.well-known/discord.txt':
-                    window.location.href = 'https://gsyt-productions.github.io/.well-known/discord.txt';
+                    location.href = 'https://gsyt-productions.github.io/.well-known/discord.txt';
                     break;
                 default:
                     return;
             }
-        });
     </script>
 </head>
 <body>
