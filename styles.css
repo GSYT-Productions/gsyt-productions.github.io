@@ -6,7 +6,7 @@ body {
 
 .header {
   background-color: #0078d7;
-  color: #fff;
+  color: #ffffff;
   padding: 20px;
   text-align: center;
 }
@@ -23,13 +23,12 @@ body {
 
 .nav {
   background-color: #9b6ce6;
-  color: #fff;
   padding: 10px;
   text-align: center;
 }
 
 .nav ul {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -39,6 +38,11 @@ body {
   margin: 0 10px;
 }
 
+.nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .main-content {
   padding: 20px;
   text-align: center;
@@ -46,22 +50,33 @@ body {
 
 .contributor {
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .contributor a {
   color: #000000;
-  font-weight: bold;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .contributor img {
   vertical-align: middle;
+  margin: 0;
+}
+
+.contributor span {
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.contributor p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #333333;
 }
 
 .footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #333333;
+  color: #ffffff;
   padding: 20px;
   text-align: center;
 }
