@@ -63,3 +63,66 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+.contributor.eepymeowers {
+  border: 2px solid palevioletred;
+  border-radius: 12px;
+  padding: 0.8em 1em;
+  background-color: #fff0f5aa; /* very light transparent pink */
+  box-shadow: 0 0 8px rgba(219, 112, 147, 0.6); /* pinkish glow */
+  max-width: 700px;
+  margin: 0 auto 1.5em auto;
+  font-family: sans-serif;
+  color: #1f1017;
+}
+
+.contributor.eepymeowers a {
+  color: palevioletred;
+  transition: color 0.3s;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contributor.eepymeowers a:visited {
+  color: palevioletred;
+}
+
+.contributor.eepymeowers a:hover {
+  color: pink;
+  text-decoration: underline;
+}
+
+.contributor.eepymeowers p {
+  margin: 0.3em 0 0 0;
+  display: inline-block;
+}
+.contributor.eclipse {
+  background-color: #17151c;
+  color: #eee;
+  padding: 0.6em 1em;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  margin-bottom: 1.5em;
+  font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contributor.eclipse a {
+  color: #b967e5;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contributor.eclipse a:hover,
+.contributor.eclipse a:focus {
+  color: #9a65c5;
+  text-decoration: underline;
+}
+
+.contributor.eclipse p {
+  margin-top: 0.3em;
+  color: #ccc;
+  font-size: 0.95em;
+}
