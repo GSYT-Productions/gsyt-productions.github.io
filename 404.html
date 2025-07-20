@@ -29,53 +29,61 @@
             text-decoration: none;
         }
     </style>
-    <script>
-            // Check if the referrer is the 404 page
-            if (document && document.referrer && document.referrer.endsWith && document.referrer.endsWith('/404.html')) {
-                return;
-            }
+    <script type="text/javascript">
+    (function() {
+        function endsWith(str, suffix) {
+            return str.indexOf(suffix, str.length - suffix.length) !== -1;
+        }
 
-            switch(location.pathname) {
-                case '/home':
-                    location.href = 'https://gsyt-productions.github.io/';
-                    break;
-                case '/bunnypad':
-                    location.href = 'https://gsyt-productions.github.io/subpages/BunnyPadInfo.html';
-                    break;
-                case '/flashcards':
-                    location.href = 'https://gsyt-productions.github.io/extras/Flashcards.html';
-                    break;
-                case '/msc':
-                    location.href = 'https://gsyt-productions.github.io/extras/mockscorecard/index.html';
-                    break;
-                case '/team':
-                    location.href = 'https://gsyt-productions.github.io/extras/team.html';
-                    break;
-                case '/unity':
-                    location.href = 'https://gsyt-productions.github.io/subpages/unity.html';
-                    break;
-                case '/socials':
-                    location.href = 'https://gsyt-productions.github.io/subpages/socials.html';
-                    break;
-                case '/resources':
-                    location.href = 'https://gsyt-productions.github.io/subpages/resources.html';
-                    break;
-                case '/retropc':
-                    location.href = 'https://gsyt-productions.github.io/subpages/retropc.html';
-                    break;
-                case 'contributors':
-                    location.href = 'https://gsyt-productions.github.io/subpages/contribs.html';
-                    break;
-                case '/cssrevalidate'
-                    location.href = 'https://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=bunnypad.eclipse.cx%2Fstyles.css&usermedium=all&vextwarning=&warning=1';
-                    break;
-                case '.well-known/discord.txt':
-                    location.href = 'https://gsyt-productions.github.io/.well-known/discord.txt';
-                    break;
-                default:
-                    return;
-            }
+        if (document.referrer && endsWith(document.referrer, '/404.html')) {
+            return;
+        }
+
+        var path = window.location.pathname;
+
+        switch (path) {
+            case '/home':
+                window.location.href = 'https://gsyt-productions.github.io/';
+                break;
+            case '/bunnypad':
+                window.location.href = 'https://gsyt-productions.github.io/subpages/BunnyPadInfo.html';
+                break;
+            case '/unity':
+                window.location.href = 'https://gsyt-productions.github.io/subpages/unity.html';
+                break;
+            case '/socials':
+                window.location.href = 'https://gsyt-productions.github.io/subpages/socials.html';
+                break;
+            case '/resources':
+                window.location.href = 'https://gsyt-productions.github.io/subpages/resources.html';
+                break;
+            case '/retropc':
+                window.location.href = 'https://gsyt-productions.github.io/subpages/retropc.html';
+                break;
+            case '/contributors':
+                window.location.href = 'https://gsyt-productions.github.io/subpages/contribs.html';
+                break;
+            case '/cssrevalidate':
+                window.location.href = 'https://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=bunnypad.eclipse.cx%2Fstyles.css&usermedium=all&vextwarning=&warning=1';
+                break;
+            case '/.well-known/discord.txt':
+                window.location.href = 'https://gsyt-productions.github.io/.well-known/discord.txt';
+                break;
+            default:
+                return;
+        }
+    })();
     </script>
+
+    <noscript>
+        <meta http-equiv="refresh" content="5;url=https://gsyt-productions.github.io/">
+        <p>
+            JavaScript is disabled or unsupported.<br>
+            If you are not redirected automatically, please visit the
+            <a href="https://gsyt-productions.github.io/">main site</a>.
+        </p>
+    </noscript>
+
 </head>
 <body>
     <article>
